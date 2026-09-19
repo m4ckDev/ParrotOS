@@ -1,0 +1,32 @@
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    display-drun: "Apps";
+    font: "monospace 13";
+}
+
+* {
+    bg: #0b0b0dee;
+    bg-alt: #18181dee;
+    fg: #f2f2f2ff;
+    muted: #77777fff;
+    accent: #ff2b2bff;
+}
+
+window {
+    width: 42%;
+    border: 2px;
+    border-color: @accent;
+    border-radius: 12px;
+    background-color: @bg;
+}
+
+mainbox { padding: 18px; background-color: transparent; }
+inputbar { padding: 10px; background-color: @bg-alt; border-radius: 8px; }
+prompt { text-color: @accent; }
+entry { text-color: @fg; }
+listview { lines: 10; spacing: 6px; margin: 12px 0 0; }
+element { padding: 8px; border-radius: 8px; }
+element selected { background-color: @accent; }
+element-text { text-color: @fg; }
+element selected element-text { text-color: #0b0b0dff; }
